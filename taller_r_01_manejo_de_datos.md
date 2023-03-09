@@ -40,7 +40,13 @@ Thu Mar 09, 2023
 install.packages('tidyverse') # incluye a dplyr y ggplot2
                               # junto a otras librerias útiles
 
+install.packages('dplyr')     # para manejo de datos
+
 install.packages('knitr')     # para mostrar tablas como texto plano
+
+install.packages('readxl')    # para abrir archivos en excel
+
+install.packages('haven')     # para abrir datos de diferentes de otros software estadisticos
 
 install.packages('devtools')  # para instalar librerias desde github
 
