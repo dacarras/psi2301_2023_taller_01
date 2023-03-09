@@ -1,0 +1,819 @@
+---
+title: "Taller 01"
+subtitle: "Manejo de datos con `dplyr`"
+date: '`r format(Sys.time(), "%a %b %d, %Y")`'
+author: "dacarras"
+output:
+  github_document
+---
+
+# Introducción
+
+- El siguiente documento es una colección breve de funciones básicas para producir resultados.
+
+- Existen diferentes maneras de producir resultados en r. En este curso, emplearemos la generación de resultados mediante códigos reproducibles. Es decir, que son códigos que pueden ser ejecutados, y debieran producir el mismo resultado en diferentes equipos, y en diferentes momentos.
+
+- Para lograr lo anterior, el código escrito debe cumplir ciertas características. Una de ellas, es que la secuencia de comandos empleados pueda ser ejecutada por un documento dinámico. El presente código esta escrito de esta forma. Una vez ejecutado, debiera poder ejecutarse completo, y producir un output en html.
+
+- En particular, vamos a revisar diferentes funciones en `R` para abrir datos, y para manejar datos. Emplearemos funciones de R base, y de la libreria `dplyr`, la cual es una librería muy versatil para el manejo de datos (ver *[cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)*)
+
+
+# Instalar librerias
+
+```{r , echo=TRUE, eval = FALSE}
+
+#------------------------------------------------------------------------------
+# instalar librerias
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# librerias
+#----------------------------------------------------------
+
+install.packages('tidyverse') # incluye a dplyr y ggplot2
+                              # junto a otras librerias útiles
+
+install.packages('knitr')     # para mostrar tablas como texto plano
+
+install.packages('devtools')  # para instalar librerias desde github
+
+install.packages("moments")   # para obtener asimetria
+
+```
+
+
+# Ejercicio 1. Abrir datos
+
+## Cargar datos desde tabla escrita
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# datos
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# tabla 3.2
+#----------------------------------------------------------
+
+data_table_3_2 <- read.table(
+text="
+person  y x x_q xy
+1 2 8 64  16
+2 3 9 81  27
+3 3 9 81  27
+4 4 10  100 40
+5 7 6 36  42
+6 5 7 49  35
+7 5 4 16  20
+8 7 5 25  35
+9 8 3 9 24
+10  9 1 1 9
+11  9 2 4 18
+12  10  2 4 20
+
+",
+header=TRUE, stringsAsFactors = FALSE)
+
+#--------------------------------------
+# mostrar tabla
+#--------------------------------------
+
+knitr::kable(data_table_3_2)
+
+```
+
+## Abrir datos desde archivo (`*.xlsx`)
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# abrir datos desde excel
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# tabla 3.2
+#----------------------------------------------------------
+
+data_from_excel <- readxl::read_xlsx('table_3_2.xlsx')
+
+#--------------------------------------
+# mostrar tabla
+#--------------------------------------
+
+knitr::kable(data_from_excel)
+
+```
+
+## Abrir datos desde archivo (`*.csv`)
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# abrir datos desde archivo csv
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# tabla 3.2
+#----------------------------------------------------------
+
+data_from_csv_file <- read.csv('table_3_2.csv')
+
+#--------------------------------------
+# mostrar tabla
+#--------------------------------------
+
+knitr::kable(data_from_csv_file)
+
+```
+
+## Abrir datos desde archivo (`*.sav`)
+
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# abrir datos desde archivo csv
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# tabla 3.2
+#----------------------------------------------------------
+
+data_from_sav_file <- haven::read_sav('table_3_2.sav')
+
+#--------------------------------------
+# mostrar tabla
+#--------------------------------------
+
+knitr::kable(data_from_sav_file)
+
+```
+
+
+## Abrir datos desde url
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# abrir datos desde archivo en una url
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# url datos
+#----------------------------------------------------------
+
+url_location <- url('https://github.com/dacarras/psi2301_2023_tarea_test/raw/main/ingresos_2016.rds')
+
+#--------------------------------------
+# abrir datos
+#--------------------------------------
+
+data_inc <- readRDS(url_location)
+
+#--------------------------------------
+# inspeccionar datos
+#--------------------------------------
+
+dplyr::glimpse(data_inc)
+
+
+#----------------------------------------------------------
+# url datos
+#----------------------------------------------------------
+
+url_location <- url('https://github.com/dacarras/psi4035_examples/raw/master/data/smoking.dta')
+
+#--------------------------------------
+# abrir datos
+#--------------------------------------
+
+data_smoking <- haven::read_dta(url_location)
+
+#--------------------------------------
+# inspeccionar datos
+#--------------------------------------
+
+dplyr::glimpse(data_smoking)
+
+
+```
+
+
+## Abrir datos desde una libreria
+
+```{r , echo=TRUE, warning=FALSE, eval = FALSE}
+
+#------------------------------------------------------------------------------
+# abrir datos desde libreria
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# instalar libreria
+#----------------------------------------------------------
+
+# devtools::install_github('dacarras/psi2301',force = TRUE)
+
+#----------------------------------------------------------
+# cargar datos desde libreria
+#----------------------------------------------------------
+
+data_smoking <- psi2301::smoking
+
+# Nota: requiere saber el nombre de los datos de forma previa.
+
+#--------------------------------------
+# inspeccionar datos
+#--------------------------------------
+
+dplyr::glimpse(data_smoking)
+
+```
+
+
+# Ejercicio 2. Inspeccionar datos
+
+## Cuántos datos tenemos en sesión
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# inspeccionar session
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# lista de objetos creados
+#----------------------------------------------------------
+
+ls()
+
+```
+
+## Contar filas `nrow()`
+
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# informacion de filas
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# filas de tabla 3.2
+#----------------------------------------------------------
+
+nrow(data_table_3_2)
+
+#----------------------------------------------------------
+# cantidad de casos en data_inc
+#----------------------------------------------------------
+
+nrow(data_inc)
+
+#----------------------------------------------------------
+# cantidad de casos en data_smoking
+#----------------------------------------------------------
+
+nrow(data_smoking)
+
+```
+
+## Contar columnas `ncol()`
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# informacion de columnas
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# columnas de tabla 3.2
+#----------------------------------------------------------
+
+nrow(data_table_3_2)
+
+#----------------------------------------------------------
+# variables de data_inc
+#----------------------------------------------------------
+
+ncol(data_inc)
+
+#----------------------------------------------------------
+# nombres de las variables
+#----------------------------------------------------------
+
+names(data_inc)
+
+#----------------------------------------------------------
+# cantidad de variables de data_smoking
+#----------------------------------------------------------
+
+ncol(data_smoking)
+
+```
+
+
+## Dimensionaes de una tabla `dim()`
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# informacion de las dimensiones de una tabla (filas, columnas)
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# dimensiones de data_smoking
+#----------------------------------------------------------
+
+dim(data_smoking)
+
+```
+
+## Inspeccionar datos `dplyr::glimpse()`
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# inspeccionar datos de forma rápida
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# inspeccionar datos de tabla 3_2
+#--------------------------------------
+
+dplyr::glimpse(data_table_3_2)
+
+#--------------------------------------
+# inspeccionar datos de ingresos
+#--------------------------------------
+
+dplyr::glimpse(data_inc)
+
+#----------------------------------------------------------
+# inspeccionar datos data_smoking
+#----------------------------------------------------------
+
+dplyr::glimpse(data_smoking)
+
+```
+
+
+# Ejercicio 3. Crear subconjuntos de datos
+
+## Filtrar casos por una condicion
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# filtrar casos
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# seleccionar casos con filter
+#--------------------------------------
+
+library(dplyr)
+data_first_born <- data_smoking %>%
+                   dplyr::filter(idx == 1) %>%
+                   mutate(kg = birwt/1000)
+
+# Nota: seleccionamos los datos del primer nacido.
+#       esto nos garantiza de que tengamos datos independientes.
+#       De lo contrario, tendriamos nacidos que provienen de las mismas
+#       madres.
+
+#--------------------------------------
+# seleccionar casos con codigo base
+#--------------------------------------
+
+data_first_base <- data_smoking[data_smoking$idx==1,]
+
+
+```
+
+## Seleccionar Columnas
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# seleccionar variables
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# seleccionar variables
+#--------------------------------------
+
+data_selected <- data_first_born %>%
+dplyr::select(
+    kg,        # peso al nacer en kilogramos
+    mage,      # edad de la madre al nacimiento del recien nacido
+    hsgrad,    # escolaridad: terminó educación formal
+    somecoll,  # escolaridad: cuenta con algunos años de escolaridad terciaria
+    collgrad,  # escolaridad: cuenta con estudios terciarios finalizados
+    black,     # madre de color
+    novisit,   # sin visita de control prenatal (1 = sin visitas, 0 = con visitas)
+    smoke      # fuma
+    ) %>%
+dplyr::glimpse()
+
+#--------------------------------------
+# seleccionar casos con codigo base
+#--------------------------------------
+
+data_selected_base <- data_first_born[,c('kg','mage', 'hsgrad', 'somecoll', 'collgrad', 'black', 'novisit', 'smoke')]
+
+```
+
+
+## Crear muestra de datos `dplyr::slice_sample()`
+
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# muestreo de casos
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# fijar seed
+#--------------------------------------
+
+set.seed(20230309)
+
+#--------------------------------------
+# sample
+#--------------------------------------
+
+data_n500 <- data_first_born %>%
+             dplyr::slice_sample(n = 500)
+
+data_prop_20 <- data_first_born %>%
+                dplyr::slice_sample(prop = .20)
+
+
+```
+
+## Crear muestra de datos por grupo `dplyr::slice_sample(data = ., by = 'grupo', prop = .2)`
+
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# muestreo de casos
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# fijar seed
+#--------------------------------------
+
+set.seed(20230309)
+
+#--------------------------------------
+# frecuencia
+#--------------------------------------
+
+dplyr::count(data_first_born, smoke)
+
+#--------------------------------------
+# balanced sample
+#--------------------------------------
+
+data_balance <- data_first_born %>%
+                dplyr::slice_sample(by = 'smoke', n = 500)
+
+
+dplyr::count(data_balance, smoke)
+
+#--------------------------------------
+# balanced sample
+#--------------------------------------
+
+data_prop <- data_first_born %>%
+             dplyr::slice_sample(by = 'smoke', prop = .50)
+
+
+dplyr::count(data_prop, smoke)
+
+```
+
+
+# Ejercicio 4. Revisar tabla
+
+## Contar casos segun condicion `dplyr::count()`
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# frecuencia de casos
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# frecuencia
+#--------------------------------------
+
+dplyr::count(data_first_born, smoke)
+
+#--------------------------------------
+# balanced sample, frecuencia
+#--------------------------------------
+
+dplyr::count(data_balance, smoke)
+
+#--------------------------------------
+# proportional sample, frecuencia
+#--------------------------------------
+
+dplyr::count(data_prop, smoke)
+
+```
+
+
+## Tabla de frecuencia
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# frecuencia de casos
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# frecuencia
+#--------------------------------------
+
+dplyr::count(data_first_born, smoke)
+
+#--------------------------------------
+# balanced sample, frecuencia
+#--------------------------------------
+
+dplyr::count(data_balance, smoke)
+
+#--------------------------------------
+# proportional sample, frecuencia
+#--------------------------------------
+
+dplyr::count(data_prop, smoke)
+
+```
+
+
+## Inspeccionar muestra de casos
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# inspeccionar datos
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# glimpse
+#--------------------------------------
+
+dplyr::glimpse(data_first_born)
+dplyr::glimpse(data_balance)
+dplyr::glimpse(data_prop)
+
+```
+
+
+# Ejercicio 5. Extrear valores
+
+## Tabla de datos como matriz
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# datos
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# tabla 3.2
+#----------------------------------------------------------
+
+data_table_3_2 <- read.table(
+text="
+person  y x x_q xy
+1 2 8 64  16
+2 3 9 81  27
+3 3 9 81  27
+4 4 10  100 40
+5 7 6 36  42
+6 5 7 49  35
+7 5 4 16  20
+8 7 5 25  35
+9 8 3 9 24
+10  9 1 1 9
+11  9 2 4 18
+12  10  2 4 20
+
+",
+header=TRUE, stringsAsFactors = FALSE)
+
+#--------------------------------------
+# mostrar tabla
+#--------------------------------------
+
+knitr::kable(data_table_3_2)
+
+
+#--------------------------------------
+# extraer valores de tabla, empleando coordenadas
+#--------------------------------------
+
+# valor 12, de la variable y
+data_table_3_2[12, 'y']
+
+# valor 10, de la variable x
+data_table_3_2[12, 'x']
+
+# valor 45, de la variable smoke
+data_first_born[45, 'smoke']
+
+
+```
+
+# Ejercicio 6. Descriptivos
+
+## Tabla de frecuencia
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# tabla cruzada
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# frecuencia
+#--------------------------------------
+
+data_balance %>%
+dplyr::count(smoke, collgrad)
+
+#--------------------------------------
+# tabla cruzada
+#--------------------------------------
+
+data_balance %>%
+xtabs(~ smoke + collgrad, data = .)
+
+
+```
+
+## Tabla de porcentajes
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# tabla cruzada
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# mostrar tabla
+#--------------------------------------
+
+data_balance %>%
+xtabs(~ smoke + collgrad, data = .) %>%
+proportions(., 1)
+
+
+```
+
+## Descriptivos de tendencia central
+
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# descriptivos
+#------------------------------------------------------------------------------
+
+#----------------------------------------------------------
+# url datos
+#----------------------------------------------------------
+
+url_location <- url('https://github.com/dacarras/psi2301_2023_tarea_test/raw/main/ingresos_2016.rds')
+
+#--------------------------------------
+# abrir datos
+#--------------------------------------
+
+data_inc <- readRDS(url_location)
+
+
+# -------------------------------------
+# sacar valores no válidos
+# -------------------------------------
+
+data_model <- data_inc %>%
+              mutate(year_edu = as.numeric(na_if(edu,- 88)))
+
+#--------------------------------------
+# función para obtener moda
+#--------------------------------------
+
+# función para obtener moda
+mode <- function(v) {
+   uniqv <- unique(v)
+   uniqv[which.max(tabulate(match(v, uniqv)))]
+# source: https://www.tutorialspoint.com/r/r_mean_median_mode.htm
+}
+
+
+#--------------------------------------
+# tendencia central
+#--------------------------------------
+
+data_model %>%
+summarize(
+moda    = mode(hinc),
+mediana = median(hinc, na.rm = TRUE),
+media   = mean(hinc, na.rm = TRUE)
+) %>%
+knitr::kable(., digits = 2)
+
+
+```
+
+## Descriptivos de posicion (e.g., percentiles)
+
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# descriptivos
+#------------------------------------------------------------------------------
+
+#--------------------------------------
+# percentiles
+#--------------------------------------
+
+data_model %>%
+summarize(
+percentil_25 = quantile(hinc, probs = .25, na.rm = TRUE),
+percentil_50 = quantile(hinc, probs = .50, na.rm = TRUE),
+percentil_75 = quantile(hinc, probs = .75, na.rm = TRUE)
+) %>%
+knitr::kable(., digits = 2)
+
+```
+
+## Descriptivos de variabilidad
+
+
+```{r , echo=TRUE, warning=FALSE}
+
+#------------------------------------------------------------------------------
+# descriptivos
+#------------------------------------------------------------------------------
+
+# -------------------------------------
+# medidas de variabilidad
+# -------------------------------------
+
+data_model %>%
+summarize(
+minimo = min(hinc, na.rm = TRUE),
+maximo = max(hinc, na.rm = TRUE),
+percentil_25 = quantile(hinc, probs = .25, na.rm = TRUE),
+percentil_75 = quantile(hinc, probs = .75, na.rm = TRUE),
+desviacion_estandar = sd(hinc, na.rm = TRUE)
+) %>%
+mutate(rango = maximo - minimo) %>%
+mutate(rango_intercuartil = percentil_75 - percentil_25) %>%
+knitr::kable(., digits = 2)
+
+```
+
+
+## Asimetria de distribuciones
+
+```{r , echo=TRUE, warning=FALSE, eval = FALSE}
+
+#------------------------------------------------------------------------------
+# descriptivos
+#------------------------------------------------------------------------------
+
+# -------------------------------------
+# peso del primer hijo
+# -------------------------------------
+
+hist(data_first_born$kg)
+moments::skewness(data_first_born$kg, na.rm = TRUE)
+
+# -------------------------------------
+# ingresos de los hogares
+# -------------------------------------
+
+hist(data_model$hinc)
+moments::skewness(data_model$hinc, na.rm = TRUE)
+
+# -------------------------------------
+# apoyo a la equidad de genero
+# -------------------------------------
+
+hist(psi2301::iccs_09_chl$GENEQL)
+moments::skewness(psi2301::iccs_09_chl$GENEQL, na.rm = TRUE)
+
+```
+
+

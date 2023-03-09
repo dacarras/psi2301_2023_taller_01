@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+padding-top: 0px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="taller-01">Taller 01</h1>
+<p>dacarras Thu Mar 09, 2023</p>
+<h1 id="introducción">Introducción</h1>
+<ul>
+<li><p>El siguiente documento es una colección breve de funciones
+básicas para producir resultados.</p></li>
+<li><p>Existen diferentes maneras de producir resultados en r. En este
+curso, emplearemos la generación de resultados mediante códigos
+reproducibles. Es decir, que son códigos que pueden ser ejecutados, y
+debieran producir el mismo resultado en diferentes equipos, y en
+diferentes momentos.</p></li>
+<li><p>Para lograr lo anterior, el código escrito debe cumplir ciertas
+características. Una de ellas, es que la secuencia de comandos empleados
+pueda ser ejecutada por un documento dinámico. El presente código esta
+escrito de esta forma. Una vez ejecutado, debiera poder ejecutarse
+completo, y producir un output en html.</p></li>
+<li><p>En particular, vamos a revisar diferentes funciones en
+<code>R</code> para abrir datos, y para manejar datos. Emplearemos
+funciones de R base, y de la libreria <code>dplyr</code>, la cual es una
+librería muy versatil para el manejo de datos (ver *<a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">cheat
+sheet</a>*)</p></li>
+</ul>
+<h1 id="instalar-librerias">Instalar librerias</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># instalar librerias</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># librerias</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;tidyverse&#39;</span>) <span class="co"># incluye a dplyr y ggplot2</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                              <span class="co"># junto a otras librerias útiles</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;knitr&#39;</span>)     <span class="co"># para mostrar tablas como texto plano</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;devtools&#39;</span>)  <span class="co"># para instalar librerias desde github</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;moments&quot;</span>)   <span class="co"># para obtener asimetria</span></span></code></pre></div>
+<h1 id="ejercicio-1-abrir-datos">Ejercicio 1. Abrir datos</h1>
+<h2 id="cargar-datos-desde-tabla-escrita">Cargar datos desde tabla
+escrita</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># datos</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># tabla 3.2</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>data_table_3_2 <span class="ot">&lt;-</span> <span class="fu">read.table</span>(</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="at">text=</span><span class="st">&quot;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="st">person  y x x_q xy</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="st">1 2 8 64  16</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="st">2 3 9 81  27</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="st">3 3 9 81  27</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="st">4 4 10  100 40</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="st">5 7 6 36  42</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="st">6 5 7 49  35</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="st">7 5 4 16  20</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="st">8 7 5 25  35</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="st">9 8 3 9 24</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="st">10  9 1 1 9</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="st">11  9 2 4 18</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="st">12  10  2 4 20</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span>,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="at">header=</span><span class="cn">TRUE</span>, <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="co"># mostrar tabla</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(data_table_3_2)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">person</th>
+<th align="right">y</th>
+<th align="right">x</th>
+<th align="right">x_q</th>
+<th align="right">xy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="right">64</td>
+<td align="right">16</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">10</td>
+<td align="right">100</td>
+<td align="right">40</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">6</td>
+<td align="right">36</td>
+<td align="right">42</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">49</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">20</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">25</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">24</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">9</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">9</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">18</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="abrir-datos-desde-archivo-xlsx">Abrir datos desde archivo
+(<code>*.xlsx</code>)</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># abrir datos desde excel</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># tabla 3.2</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>data_from_excel <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">&#39;table_3_2.xlsx&#39;</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># mostrar tabla</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(data_from_excel)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">person</th>
+<th align="right">y</th>
+<th align="right">x</th>
+<th align="right">x_q</th>
+<th align="right">xy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="right">64</td>
+<td align="right">16</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">10</td>
+<td align="right">100</td>
+<td align="right">40</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">6</td>
+<td align="right">36</td>
+<td align="right">42</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">49</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">20</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">25</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">24</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">9</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">9</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">18</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="abrir-datos-desde-archivo-csv">Abrir datos desde archivo
+(<code>*.csv</code>)</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># abrir datos desde archivo csv</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># tabla 3.2</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>data_from_csv_file <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&#39;table_3_2.csv&#39;</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># mostrar tabla</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(data_from_csv_file)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">person</th>
+<th align="right">y</th>
+<th align="right">x</th>
+<th align="right">x_q</th>
+<th align="right">xy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="right">64</td>
+<td align="right">16</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">10</td>
+<td align="right">100</td>
+<td align="right">40</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">6</td>
+<td align="right">36</td>
+<td align="right">42</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">49</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">20</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">25</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">24</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">9</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">9</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">18</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="abrir-datos-desde-archivo-sav">Abrir datos desde archivo
+(<code>*.sav</code>)</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># abrir datos desde archivo csv</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># tabla 3.2</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>data_from_sav_file <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="st">&#39;table_3_2.sav&#39;</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># mostrar tabla</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(data_from_sav_file)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">person</th>
+<th align="right">y</th>
+<th align="right">x</th>
+<th align="right">x_q</th>
+<th align="right">xy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="right">64</td>
+<td align="right">16</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">10</td>
+<td align="right">100</td>
+<td align="right">40</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">6</td>
+<td align="right">36</td>
+<td align="right">42</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">49</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">20</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">25</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">24</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">9</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">9</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">18</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="abrir-datos-desde-url">Abrir datos desde url</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># abrir datos desde archivo en una url</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># url datos</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>url_location <span class="ot">&lt;-</span> <span class="fu">url</span>(<span class="st">&#39;https://github.com/dacarras/psi2301_2023_tarea_test/raw/main/ingresos_2016.rds&#39;</span>)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co"># abrir datos</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>data_inc <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(url_location)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co"># inspeccionar datos</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(data_inc)</span></code></pre></div>
+<pre><code>## Rows: 1,120
+## Columns: 4
+## $ hinc   &lt;dbl&gt; 128.00000, 511.87225, 731.02267, 471.20375, 819.23280, 444.6939…
+## $ sex    &lt;dbl&gt; 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, …
+## $ edu    &lt;dbl+lbl&gt;  8, 11, 15, 12, 11, 14, 12, 18, 12,  7, 12, 17,  0,  3, 12,…
+## $ home_n &lt;dbl&gt; 5, 4, 3, 4, 4, 4, 4, 4, 4, 3, 4, 2, 4, 3, 2, 6, 12, 3, 2, 5, 2,…</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># url datos</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>url_location <span class="ot">&lt;-</span> <span class="fu">url</span>(<span class="st">&#39;https://github.com/dacarras/psi4035_examples/raw/master/data/smoking.dta&#39;</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># abrir datos</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>data_smoking <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_dta</span>(url_location)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># inspeccionar datos</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(data_smoking)</span></code></pre></div>
+<pre><code>## Rows: 8,604
+## Columns: 24
+## $ momid    &lt;dbl&gt; 14, 14, 14, 25, 25, 25, 39, 39, 39, 48, 48, 60, 60, 71, 71, 7…
+## $ idx      &lt;dbl&gt; 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 1, 2, 1, 2, 3, 1, 2, 1, 2, 1…
+## $ stateres &lt;dbl+lbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ mage     &lt;dbl&gt; 16, 17, 20, 23, 24, 26, 36, 38, 39, 30, 32, 23, 26, 20, 22, 2…
+## $ meduc    &lt;dbl&gt; 10, 10, 10, 11, 11, 11, 14, 14, 14, 12, 12, 13, 13, 10, 10, 1…
+## $ mplbir   &lt;dbl+lbl&gt; 47, 47, 47, 31, 31, 31, 30, 30, 30, 34, 34, 41, 41, 18, 1…
+## $ nlbnl    &lt;dbl&gt; 0, 1, 2, 2, 3, 4, 2, 3, 4, 3, 4, 0, 1, 0, 1, 2, 2, 3, 2, 3, 0…
+## $ gestat   &lt;dbl&gt; 24, 42, 39, 41, 37, 40, 41, 40, 39, 39, 38, 43, 37, 40, 41, 4…
+## $ birwt    &lt;dbl&gt; 2790, 2693, 3600, 2778, 2835, 3402, 2948, 3487, 3345, 2880, 3…
+## $ cigs     &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 99, 40, 0, 0, 99, 20, 10, 0, 0, 0,…
+## $ smoke    &lt;dbl+lbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, …
+## $ male     &lt;dbl+lbl&gt; 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, …
+## $ year     &lt;dbl&gt; 0, 1, 4, 2, 3, 5, 1, 3, 5, 0, 1, 0, 3, 0, 2, 3, 0, 2, 0, 3, 0…
+## $ married  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ hsgrad   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ somecoll &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0…
+## $ collgrad &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1…
+## $ magesq   &lt;dbl&gt; 256, 289, 400, 529, 576, 676, 1296, 1444, 1521, 900, 1024, 52…
+## $ black    &lt;dbl+lbl&gt; 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, …
+## $ kessner2 &lt;dbl&gt; 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0…
+## $ kessner3 &lt;dbl&gt; 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ novisit  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ pretri2  &lt;dbl&gt; 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0…
+## $ pretri3  &lt;dbl&gt; 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…</code></pre>
+<h2 id="abrir-datos-desde-una-libreria">Abrir datos desde una
+libreria</h2>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># abrir datos desde libreria</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co"># instalar libreria</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co"># devtools::install_github(&#39;dacarras/psi2301&#39;,force = TRUE)</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="co"># cargar datos desde libreria</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>data_smoking <span class="ot">&lt;-</span> psi2301<span class="sc">::</span>smoking</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Nota: requiere saber el nombre de los datos de forma previa.</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="co"># inspeccionar datos</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(data_smoking)</span></code></pre></div>
+<h1 id="ejercicio-2-inspeccionar-datos">Ejercicio 2. Inspeccionar
+datos</h1>
+<h2 id="cuántos-datos-tenemos-en-sesión">Cuántos datos tenemos en
+sesión</h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># inspeccionar session</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># lista de objetos creados</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span>()</span></code></pre></div>
+<pre><code>##  [1] &quot;cars&quot;               &quot;data_balance&quot;       &quot;data_first_base&quot;   
+##  [4] &quot;data_first_born&quot;    &quot;data_from_csv_file&quot; &quot;data_from_excel&quot;   
+##  [7] &quot;data_from_sav_file&quot; &quot;data_inc&quot;           &quot;data_model&quot;        
+## [10] &quot;data_n500&quot;          &quot;data_prop&quot;          &quot;data_prop_20&quot;      
+## [13] &quot;data_raw&quot;           &quot;data_selected&quot;      &quot;data_selected_base&quot;
+## [16] &quot;data_smoking&quot;       &quot;data_table_3_2&quot;     &quot;datos_idps&quot;        
+## [19] &quot;datos_tarea&quot;        &quot;hist_info&quot;          &quot;mode&quot;              
+## [22] &quot;texto_en_codigo&quot;    &quot;url_location&quot;       &quot;valor_mediana&quot;</code></pre>
+<h2 id="contar-filas-nrow">Contar filas <code>nrow()</code></h2>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># informacion de filas</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co"># filas de tabla 3.2</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(data_table_3_2)</span></code></pre></div>
+<pre><code>## [1] 12</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># cantidad de casos en data_inc</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(data_inc)</span></code></pre></div>
+<pre><code>## [1] 1120</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># cantidad de casos en data_smoking</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(data_smoking)</span></code></pre></div>
+<pre><code>## [1] 8604</code></pre>
+<h2 id="contar-columnas-ncol">Contar columnas <code>ncol()</code></h2>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co"># informacion de columnas</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co"># columnas de tabla 3.2</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(data_table_3_2)</span></code></pre></div>
+<pre><code>## [1] 12</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># variables de data_inc</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(data_inc)</span></code></pre></div>
+<pre><code>## [1] 4</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="co"># nombres de las variables</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(data_inc)</span></code></pre></div>
+<pre><code>## [1] &quot;hinc&quot;   &quot;sex&quot;    &quot;edu&quot;    &quot;home_n&quot;</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># cantidad de variables de data_smoking</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(data_smoking)</span></code></pre></div>
+<pre><code>## [1] 24</code></pre>
+<h2 id="dimensionaes-de-una-tabla-dim">Dimensionaes de una tabla
+<code>dim()</code></h2>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co"># informacion de las dimensiones de una tabla (filas, columnas)</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># dimensiones de data_smoking</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(data_smoking)</span></code></pre></div>
+<pre><code>## [1] 8604   24</code></pre>
+<h2 id="inspeccionar-datos-dplyrglimpse">Inspeccionar datos
+<code>dplyr::glimpse()</code></h2>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="co"># inspeccionar datos de forma rápida</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="co"># inspeccionar datos de tabla 3_2</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(data_table_3_2)</span></code></pre></div>
+<pre><code>## Rows: 12
+## Columns: 5
+## $ person &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+## $ y      &lt;int&gt; 2, 3, 3, 4, 7, 5, 5, 7, 8, 9, 9, 10
+## $ x      &lt;int&gt; 8, 9, 9, 10, 6, 7, 4, 5, 3, 1, 2, 2
+## $ x_q    &lt;int&gt; 64, 81, 81, 100, 36, 49, 16, 25, 9, 1, 4, 4
+## $ xy     &lt;int&gt; 16, 27, 27, 40, 42, 35, 20, 35, 24, 9, 18, 20</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="co"># inspeccionar datos de ingresos</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(data_inc)</span></code></pre></div>
+<pre><code>## Rows: 1,120
+## Columns: 4
+## $ hinc   &lt;dbl&gt; 128.00000, 511.87225, 731.02267, 471.20375, 819.23280, 444.6939…
+## $ sex    &lt;dbl&gt; 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, …
+## $ edu    &lt;dbl+lbl&gt;  8, 11, 15, 12, 11, 14, 12, 18, 12,  7, 12, 17,  0,  3, 12,…
+## $ home_n &lt;dbl&gt; 5, 4, 3, 4, 4, 4, 4, 4, 4, 3, 4, 2, 4, 3, 2, 6, 12, 3, 2, 5, 2,…</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="co"># inspeccionar datos data_smoking</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(data_smoking)</span></code></pre></div>
+<pre><code>## Rows: 8,604
+## Columns: 24
+## $ momid    &lt;dbl&gt; 14, 14, 14, 25, 25, 25, 39, 39, 39, 48, 48, 60, 60, 71, 71, 7…
+## $ idx      &lt;dbl&gt; 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 1, 2, 1, 2, 3, 1, 2, 1, 2, 1…
+## $ stateres &lt;dbl+lbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ mage     &lt;dbl&gt; 16, 17, 20, 23, 24, 26, 36, 38, 39, 30, 32, 23, 26, 20, 22, 2…
+## $ meduc    &lt;dbl&gt; 10, 10, 10, 11, 11, 11, 14, 14, 14, 12, 12, 13, 13, 10, 10, 1…
+## $ mplbir   &lt;dbl+lbl&gt; 47, 47, 47, 31, 31, 31, 30, 30, 30, 34, 34, 41, 41, 18, 1…
+## $ nlbnl    &lt;dbl&gt; 0, 1, 2, 2, 3, 4, 2, 3, 4, 3, 4, 0, 1, 0, 1, 2, 2, 3, 2, 3, 0…
+## $ gestat   &lt;dbl&gt; 24, 42, 39, 41, 37, 40, 41, 40, 39, 39, 38, 43, 37, 40, 41, 4…
+## $ birwt    &lt;dbl&gt; 2790, 2693, 3600, 2778, 2835, 3402, 2948, 3487, 3345, 2880, 3…
+## $ cigs     &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 99, 40, 0, 0, 99, 20, 10, 0, 0, 0,…
+## $ smoke    &lt;dbl+lbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, …
+## $ male     &lt;dbl+lbl&gt; 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, …
+## $ year     &lt;dbl&gt; 0, 1, 4, 2, 3, 5, 1, 3, 5, 0, 1, 0, 3, 0, 2, 3, 0, 2, 0, 3, 0…
+## $ married  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ hsgrad   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ somecoll &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0…
+## $ collgrad &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1…
+## $ magesq   &lt;dbl&gt; 256, 289, 400, 529, 576, 676, 1296, 1444, 1521, 900, 1024, 52…
+## $ black    &lt;dbl+lbl&gt; 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, …
+## $ kessner2 &lt;dbl&gt; 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0…
+## $ kessner3 &lt;dbl&gt; 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ novisit  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ pretri2  &lt;dbl&gt; 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0…
+## $ pretri3  &lt;dbl&gt; 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…</code></pre>
+<h1 id="ejercicio-3-crear-subconjuntos-de-datos">Ejercicio 3. Crear
+subconjuntos de datos</h1>
+<h2 id="filtrar-casos-por-una-condicion">Filtrar casos por una
+condicion</h2>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="co"># filtrar casos</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="co"># seleccionar casos con filter</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>data_first_born <span class="ot">&lt;-</span> data_smoking <span class="sc">%&gt;%</span></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>                   dplyr<span class="sc">::</span><span class="fu">filter</span>(idx <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>                   <span class="fu">mutate</span>(<span class="at">kg =</span> birwt<span class="sc">/</span><span class="dv">1000</span>)</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Nota: seleccionamos los datos del primer nacido.</span></span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a><span class="co">#       esto nos garantiza de que tengamos datos independientes.</span></span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a><span class="co">#       De lo contrario, tendriamos nacidos que provienen de las mismas</span></span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a><span class="co">#       madres.</span></span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a><span class="co"># seleccionar casos con codigo base</span></span>
+<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a>data_first_base <span class="ot">&lt;-</span> data_smoking[data_smoking<span class="sc">$</span>idx<span class="sc">==</span><span class="dv">1</span>,]</span></code></pre></div>
+<h2 id="seleccionar-columnas">Seleccionar Columnas</h2>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="co"># seleccionar variables</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="co"># seleccionar variables</span></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>data_selected <span class="ot">&lt;-</span> data_first_born <span class="sc">%&gt;%</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">select</span>(</span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>    kg,        <span class="co"># peso al nacer en kilogramos</span></span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>    mage,      <span class="co"># edad de la madre al nacimiento del recien nacido</span></span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>    hsgrad,    <span class="co"># escolaridad: terminó educación formal</span></span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a>    somecoll,  <span class="co"># escolaridad: cuenta con algunos años de escolaridad terciaria</span></span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a>    collgrad,  <span class="co"># escolaridad: cuenta con estudios terciarios finalizados</span></span>
+<span id="cb36-16"><a href="#cb36-16" aria-hidden="true" tabindex="-1"></a>    black,     <span class="co"># madre de color</span></span>
+<span id="cb36-17"><a href="#cb36-17" aria-hidden="true" tabindex="-1"></a>    novisit,   <span class="co"># sin visita de control prenatal (1 = sin visitas, 0 = con visitas)</span></span>
+<span id="cb36-18"><a href="#cb36-18" aria-hidden="true" tabindex="-1"></a>    smoke      <span class="co"># fuma</span></span>
+<span id="cb36-19"><a href="#cb36-19" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb36-20"><a href="#cb36-20" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>()</span></code></pre></div>
+<pre><code>## Rows: 3,978
+## Columns: 8
+## $ kg       &lt;dbl&gt; 2.790, 2.778, 2.948, 2.880, 3.714, 3.203, 3.450, 3.345, 2.892…
+## $ mage     &lt;dbl&gt; 16, 23, 36, 30, 23, 20, 25, 34, 30, 28, 29, 26, 21, 29, 23, 2…
+## $ hsgrad   &lt;dbl&gt; 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0…
+## $ somecoll &lt;dbl&gt; 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1…
+## $ collgrad &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0…
+## $ black    &lt;dbl+lbl&gt; 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+## $ novisit  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ smoke    &lt;dbl+lbl&gt; 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, …</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="co"># seleccionar casos con codigo base</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>data_selected_base <span class="ot">&lt;-</span> data_first_born[,<span class="fu">c</span>(<span class="st">&#39;kg&#39;</span>,<span class="st">&#39;mage&#39;</span>, <span class="st">&#39;hsgrad&#39;</span>, <span class="st">&#39;somecoll&#39;</span>, <span class="st">&#39;collgrad&#39;</span>, <span class="st">&#39;black&#39;</span>, <span class="st">&#39;novisit&#39;</span>, <span class="st">&#39;smoke&#39;</span>)]</span></code></pre></div>
+<h2 id="crear-muestra-de-datos-dplyrslice_sample">Crear muestra de datos
+<code>dplyr::slice_sample()</code></h2>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="co"># muestreo de casos</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="co"># fijar seed</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">20230309</span>)</span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a><span class="co"># sample</span></span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb39-14"><a href="#cb39-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-15"><a href="#cb39-15" aria-hidden="true" tabindex="-1"></a>data_n500 <span class="ot">&lt;-</span> data_first_born <span class="sc">%&gt;%</span></span>
+<span id="cb39-16"><a href="#cb39-16" aria-hidden="true" tabindex="-1"></a>             dplyr<span class="sc">::</span><span class="fu">slice_sample</span>(<span class="at">n =</span> <span class="dv">500</span>)</span>
+<span id="cb39-17"><a href="#cb39-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-18"><a href="#cb39-18" aria-hidden="true" tabindex="-1"></a>data_prop_20 <span class="ot">&lt;-</span> data_first_born <span class="sc">%&gt;%</span></span>
+<span id="cb39-19"><a href="#cb39-19" aria-hidden="true" tabindex="-1"></a>                dplyr<span class="sc">::</span><span class="fu">slice_sample</span>(<span class="at">prop =</span> .<span class="dv">20</span>)</span></code></pre></div>
+<h2 id="crear-muestra-de-datos-por-grupo-dplyrslice_sampledata---by--grupo-prop--2">Crear
+muestra de datos por grupo
+<code>dplyr::slice_sample(data = ., by = &#39;grupo&#39;, prop = .2)</code></h2>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="co"># muestreo de casos</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="co"># fijar seed</span></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">20230309</span>)</span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a><span class="co"># frecuencia</span></span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(data_first_born, smoke)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   smoke             n
+##   &lt;dbl+lbl&gt;     &lt;int&gt;
+## 1 0 [Nonsmoker]  3417
+## 2 1 [Smoker]      561</code></pre>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="co"># balanced sample</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>data_balance <span class="ot">&lt;-</span> data_first_born <span class="sc">%&gt;%</span></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>                dplyr<span class="sc">::</span><span class="fu">slice_sample</span>(<span class="at">by =</span> <span class="st">&#39;smoke&#39;</span>, <span class="at">n =</span> <span class="dv">500</span>)</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(data_balance, smoke)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   smoke             n
+##   &lt;dbl+lbl&gt;     &lt;int&gt;
+## 1 0 [Nonsmoker]   500
+## 2 1 [Smoker]      500</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="co"># balanced sample</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>data_prop <span class="ot">&lt;-</span> data_first_born <span class="sc">%&gt;%</span></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>             dplyr<span class="sc">::</span><span class="fu">slice_sample</span>(<span class="at">by =</span> <span class="st">&#39;smoke&#39;</span>, <span class="at">prop =</span> .<span class="dv">50</span>)</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(data_prop, smoke)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   smoke             n
+##   &lt;dbl+lbl&gt;     &lt;int&gt;
+## 1 0 [Nonsmoker]  1708
+## 2 1 [Smoker]      280</code></pre>
+<h1 id="ejercicio-4-revisar-tabla">Ejercicio 4. Revisar tabla</h1>
+<h2 id="contar-casos-segun-condicion-dplyrcount">Contar casos segun
+condicion <code>dplyr::count()</code></h2>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="co"># frecuencia de casos</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a><span class="co"># frecuencia</span></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(data_first_born, smoke)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   smoke             n
+##   &lt;dbl+lbl&gt;     &lt;int&gt;
+## 1 0 [Nonsmoker]  3417
+## 2 1 [Smoker]      561</code></pre>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="co"># balanced sample, frecuencia</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(data_balance, smoke)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   smoke             n
+##   &lt;dbl+lbl&gt;     &lt;int&gt;
+## 1 0 [Nonsmoker]   500
+## 2 1 [Smoker]      500</code></pre>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="co"># proportional sample, frecuencia</span></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(data_prop, smoke)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   smoke             n
+##   &lt;dbl+lbl&gt;     &lt;int&gt;
+## 1 0 [Nonsmoker]  1708
+## 2 1 [Smoker]      280</code></pre>
+<h2 id="tabla-de-frecuencia">Tabla de frecuencia</h2>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="co"># frecuencia de casos</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="co"># frecuencia</span></span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(data_first_born, smoke)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   smoke             n
+##   &lt;dbl+lbl&gt;     &lt;int&gt;
+## 1 0 [Nonsmoker]  3417
+## 2 1 [Smoker]      561</code></pre>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="co"># balanced sample, frecuencia</span></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(data_balance, smoke)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   smoke             n
+##   &lt;dbl+lbl&gt;     &lt;int&gt;
+## 1 0 [Nonsmoker]   500
+## 2 1 [Smoker]      500</code></pre>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="co"># proportional sample, frecuencia</span></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(data_prop, smoke)</span></code></pre></div>
+<pre><code>## # A tibble: 2 × 2
+##   smoke             n
+##   &lt;dbl+lbl&gt;     &lt;int&gt;
+## 1 0 [Nonsmoker]  1708
+## 2 1 [Smoker]      280</code></pre>
+<h2 id="inspeccionar-muestra-de-casos">Inspeccionar muestra de
+casos</h2>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="co"># inspeccionar datos</span></span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a><span class="co"># glimpse</span></span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(data_first_born)</span></code></pre></div>
+<pre><code>## Rows: 3,978
+## Columns: 25
+## $ momid    &lt;dbl&gt; 14, 25, 39, 48, 60, 71, 73, 86, 110, 115, 138, 142, 151, 156,…
+## $ idx      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ stateres &lt;dbl+lbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ mage     &lt;dbl&gt; 16, 23, 36, 30, 23, 20, 25, 34, 30, 28, 29, 26, 21, 29, 23, 2…
+## $ meduc    &lt;dbl&gt; 10, 11, 14, 12, 13, 10, 14, 17, 16, 17, 17, 14, 12, 17, 12, 1…
+## $ mplbir   &lt;dbl+lbl&gt; 47, 31, 30, 34, 41, 18, 47, 17, 18, 41, 37,  4, 18, 22, 4…
+## $ nlbnl    &lt;dbl&gt; 0, 2, 2, 3, 0, 0, 2, 2, 0, 0, 0, 1, 1, 0, 0, 1, 3, 0, 1, 1, 1…
+## $ gestat   &lt;dbl&gt; 24, 41, 41, 39, 43, 40, 41, 38, 39, 40, 39, 39, 43, 38, 40, 4…
+## $ birwt    &lt;dbl&gt; 2790, 2778, 2948, 2880, 3714, 3203, 3450, 3345, 2892, 3880, 3…
+## $ cigs     &lt;dbl&gt; 0, 0, 0, 99, 0, 99, 0, 0, 0, 0, 0, 0, 5, 0, 0, 10, 0, 0, 0, 2…
+## $ smoke    &lt;dbl+lbl&gt; 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, …
+## $ male     &lt;dbl+lbl&gt; 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, …
+## $ year     &lt;dbl&gt; 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ married  &lt;dbl&gt; 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ hsgrad   &lt;dbl&gt; 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0…
+## $ somecoll &lt;dbl&gt; 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1…
+## $ collgrad &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0…
+## $ magesq   &lt;dbl&gt; 256, 529, 1296, 900, 529, 400, 625, 1156, 900, 784, 841, 676,…
+## $ black    &lt;dbl+lbl&gt; 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+## $ kessner2 &lt;dbl&gt; 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0…
+## $ kessner3 &lt;dbl&gt; 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ novisit  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ pretri2  &lt;dbl&gt; 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0…
+## $ pretri3  &lt;dbl&gt; 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ kg       &lt;dbl&gt; 2.790, 2.778, 2.948, 2.880, 3.714, 3.203, 3.450, 3.345, 2.892…</code></pre>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(data_balance)</span></code></pre></div>
+<pre><code>## Rows: 1,000
+## Columns: 25
+## $ momid    &lt;dbl&gt; 25641, 21074, 5909, 14595, 38536, 27191, 66553, 3636, 48145, …
+## $ idx      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ stateres &lt;dbl+lbl&gt;  8, 50, 16, 35, 31, 12, 38, 10, 50, 23, 34, 29, 29,  4,  …
+## $ mage     &lt;dbl&gt; 20, 18, 21, 27, 32, 23, 32, 27, 33, 27, 33, 23, 22, 23, 37, 3…
+## $ meduc    &lt;dbl&gt; 12, 10, 12, 16, 16, 14, 16, 16, 14, 16, 16, 14, 11, 13, 16, 1…
+## $ mplbir   &lt;dbl+lbl&gt; 41, 26, 10, 27,  8, 51, 28, 12, 28,  6, 40, 20, 31, 21, 1…
+## $ nlbnl    &lt;dbl&gt; 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 3, 0, 3, 0, 0, 4, 0, 1, 1…
+## $ gestat   &lt;dbl&gt; 40, 37, 33, 39, 39, 43, 39, 39, 38, 39, 37, 41, 38, 40, 42, 4…
+## $ birwt    &lt;dbl&gt; 3260, 3204, 3374, 3714, 3115, 2999, 3610, 3487, 3459, 2450, 2…
+## $ cigs     &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ smoke    &lt;dbl+lbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+## $ male     &lt;dbl+lbl&gt; 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, …
+## $ year     &lt;dbl&gt; 1, 0, 0, 0, 1, 1, 2, 0, 1, 1, 2, 1, 0, 0, 0, 0, 2, 2, 1, 1, 1…
+## $ married  &lt;dbl&gt; 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ hsgrad   &lt;dbl&gt; 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ somecoll &lt;dbl&gt; 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1…
+## $ collgrad &lt;dbl&gt; 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0…
+## $ magesq   &lt;dbl&gt; 400, 324, 441, 729, 1024, 529, 1024, 729, 1089, 729, 1089, 52…
+## $ black    &lt;dbl+lbl&gt; 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+## $ kessner2 &lt;dbl&gt; 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ kessner3 &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ novisit  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ pretri2  &lt;dbl&gt; 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ pretri3  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ kg       &lt;dbl&gt; 3.260, 3.204, 3.374, 3.714, 3.115, 2.999, 3.610, 3.487, 3.459…</code></pre>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(data_prop)</span></code></pre></div>
+<pre><code>## Rows: 1,988
+## Columns: 25
+## $ momid    &lt;dbl&gt; 413, 16411, 69495, 19872, 50084, 89045, 23226, 10590, 48962, …
+## $ idx      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ stateres &lt;dbl+lbl&gt;  1, 39, 44, 47,  2, 38,  3, 26, 51, 10, 19, 25, 25, 34, 1…
+## $ mage     &lt;dbl&gt; 32, 20, 29, 24, 25, 30, 28, 31, 32, 28, 34, 22, 20, 33, 32, 3…
+## $ meduc    &lt;dbl&gt; 16, 12, 16, 16, 14, 11, 12, 16, 12, 16, 15, 14, 12, 17, 16, 1…
+## $ mplbir   &lt;dbl+lbl&gt; 15, 37, 35, 19, 28, 16, 51, 31, 24, 32, 39, 37, 41,  6, 1…
+## $ nlbnl    &lt;dbl&gt; 0, 0, 0, 0, 0, 5, 0, 3, 2, 0, 1, 0, 1, 0, 0, 0, 0, 2, 1, 1, 0…
+## $ gestat   &lt;dbl&gt; 39, 39, 41, 39, 39, 40, 41, 36, 40, 39, 38, 41, 41, 40, 39, 4…
+## $ birwt    &lt;dbl&gt; 3629, 3155, 3430, 3480, 3911, 3544, 3629, 3884, 3657, 4111, 2…
+## $ cigs     &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ smoke    &lt;dbl+lbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+## $ male     &lt;dbl+lbl&gt; 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, …
+## $ year     &lt;dbl&gt; 0, 0, 2, 0, 2, 3, 1, 2, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1…
+## $ married  &lt;dbl&gt; 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ hsgrad   &lt;dbl&gt; 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1…
+## $ somecoll &lt;dbl&gt; 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0…
+## $ collgrad &lt;dbl&gt; 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0…
+## $ magesq   &lt;dbl&gt; 1024, 400, 841, 576, 625, 900, 784, 961, 1024, 784, 1156, 484…
+## $ black    &lt;dbl+lbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, …
+## $ kessner2 &lt;dbl&gt; 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1…
+## $ kessner3 &lt;dbl&gt; 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ novisit  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ pretri2  &lt;dbl&gt; 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1…
+## $ pretri3  &lt;dbl&gt; 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ kg       &lt;dbl&gt; 3.629, 3.155, 3.430, 3.480, 3.911, 3.544, 3.629, 3.884, 3.657…</code></pre>
+<h1 id="ejercicio-5-extrear-valores">Ejercicio 5. Extrear valores</h1>
+<h2 id="tabla-de-datos-como-matriz">Tabla de datos como matriz</h2>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="co"># datos</span></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a><span class="co"># tabla 3.2</span></span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-9"><a href="#cb64-9" aria-hidden="true" tabindex="-1"></a>data_table_3_2 <span class="ot">&lt;-</span> <span class="fu">read.table</span>(</span>
+<span id="cb64-10"><a href="#cb64-10" aria-hidden="true" tabindex="-1"></a><span class="at">text=</span><span class="st">&quot;</span></span>
+<span id="cb64-11"><a href="#cb64-11" aria-hidden="true" tabindex="-1"></a><span class="st">person  y x x_q xy</span></span>
+<span id="cb64-12"><a href="#cb64-12" aria-hidden="true" tabindex="-1"></a><span class="st">1 2 8 64  16</span></span>
+<span id="cb64-13"><a href="#cb64-13" aria-hidden="true" tabindex="-1"></a><span class="st">2 3 9 81  27</span></span>
+<span id="cb64-14"><a href="#cb64-14" aria-hidden="true" tabindex="-1"></a><span class="st">3 3 9 81  27</span></span>
+<span id="cb64-15"><a href="#cb64-15" aria-hidden="true" tabindex="-1"></a><span class="st">4 4 10  100 40</span></span>
+<span id="cb64-16"><a href="#cb64-16" aria-hidden="true" tabindex="-1"></a><span class="st">5 7 6 36  42</span></span>
+<span id="cb64-17"><a href="#cb64-17" aria-hidden="true" tabindex="-1"></a><span class="st">6 5 7 49  35</span></span>
+<span id="cb64-18"><a href="#cb64-18" aria-hidden="true" tabindex="-1"></a><span class="st">7 5 4 16  20</span></span>
+<span id="cb64-19"><a href="#cb64-19" aria-hidden="true" tabindex="-1"></a><span class="st">8 7 5 25  35</span></span>
+<span id="cb64-20"><a href="#cb64-20" aria-hidden="true" tabindex="-1"></a><span class="st">9 8 3 9 24</span></span>
+<span id="cb64-21"><a href="#cb64-21" aria-hidden="true" tabindex="-1"></a><span class="st">10  9 1 1 9</span></span>
+<span id="cb64-22"><a href="#cb64-22" aria-hidden="true" tabindex="-1"></a><span class="st">11  9 2 4 18</span></span>
+<span id="cb64-23"><a href="#cb64-23" aria-hidden="true" tabindex="-1"></a><span class="st">12  10  2 4 20</span></span>
+<span id="cb64-24"><a href="#cb64-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-25"><a href="#cb64-25" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span>,</span>
+<span id="cb64-26"><a href="#cb64-26" aria-hidden="true" tabindex="-1"></a><span class="at">header=</span><span class="cn">TRUE</span>, <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb64-27"><a href="#cb64-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-28"><a href="#cb64-28" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb64-29"><a href="#cb64-29" aria-hidden="true" tabindex="-1"></a><span class="co"># mostrar tabla</span></span>
+<span id="cb64-30"><a href="#cb64-30" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb64-31"><a href="#cb64-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-32"><a href="#cb64-32" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(data_table_3_2)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">person</th>
+<th align="right">y</th>
+<th align="right">x</th>
+<th align="right">x_q</th>
+<th align="right">xy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="right">64</td>
+<td align="right">16</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">81</td>
+<td align="right">27</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">10</td>
+<td align="right">100</td>
+<td align="right">40</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">6</td>
+<td align="right">36</td>
+<td align="right">42</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">49</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">20</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">7</td>
+<td align="right">5</td>
+<td align="right">25</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">24</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">9</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">9</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">18</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">20</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="co"># extraer valores de tabla, empleando coordenadas</span></span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a><span class="co"># valor 12, de la variable y</span></span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>data_table_3_2[<span class="dv">12</span>, <span class="st">&#39;y&#39;</span>]</span></code></pre></div>
+<pre><code>## [1] 10</code></pre>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># valor 10, de la variable x</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>data_table_3_2[<span class="dv">12</span>, <span class="st">&#39;x&#39;</span>]</span></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># valor 45, de la variable smoke</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>data_first_born[<span class="dv">45</span>, <span class="st">&#39;smoke&#39;</span>]</span></code></pre></div>
+<pre><code>## # A tibble: 1 × 1
+##   smoke        
+##   &lt;dbl+lbl&gt;    
+## 1 0 [Nonsmoker]</code></pre>
+<h1 id="ejercicio-6-descriptivos">Ejercicio 6. Descriptivos</h1>
+<h2 id="tabla-de-frecuencia-1">Tabla de frecuencia</h2>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a><span class="co"># tabla cruzada</span></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a><span class="co"># frecuencia</span></span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a>data_balance <span class="sc">%&gt;%</span></span>
+<span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">count</span>(smoke, collgrad)</span></code></pre></div>
+<pre><code>## # A tibble: 4 × 3
+##   smoke         collgrad     n
+##   &lt;dbl+lbl&gt;        &lt;dbl&gt; &lt;int&gt;
+## 1 0 [Nonsmoker]        0   284
+## 2 0 [Nonsmoker]        1   216
+## 3 1 [Smoker]           0   461
+## 4 1 [Smoker]           1    39</code></pre>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a><span class="co"># tabla cruzada</span></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a>data_balance <span class="sc">%&gt;%</span></span>
+<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a><span class="fu">xtabs</span>(<span class="sc">~</span> smoke <span class="sc">+</span> collgrad, <span class="at">data =</span> .)</span></code></pre></div>
+<pre><code>##      collgrad
+## smoke   0   1
+##     0 284 216
+##     1 461  39</code></pre>
+<h2 id="tabla-de-porcentajes">Tabla de porcentajes</h2>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a><span class="co"># tabla cruzada</span></span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-5"><a href="#cb75-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb75-6"><a href="#cb75-6" aria-hidden="true" tabindex="-1"></a><span class="co"># mostrar tabla</span></span>
+<span id="cb75-7"><a href="#cb75-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb75-8"><a href="#cb75-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-9"><a href="#cb75-9" aria-hidden="true" tabindex="-1"></a>data_balance <span class="sc">%&gt;%</span></span>
+<span id="cb75-10"><a href="#cb75-10" aria-hidden="true" tabindex="-1"></a><span class="fu">xtabs</span>(<span class="sc">~</span> smoke <span class="sc">+</span> collgrad, <span class="at">data =</span> .) <span class="sc">%&gt;%</span></span>
+<span id="cb75-11"><a href="#cb75-11" aria-hidden="true" tabindex="-1"></a><span class="fu">proportions</span>(., <span class="dv">1</span>)</span></code></pre></div>
+<pre><code>##      collgrad
+## smoke     0     1
+##     0 0.568 0.432
+##     1 0.922 0.078</code></pre>
+<h2 id="descriptivos-de-tendencia-central">Descriptivos de tendencia
+central</h2>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a><span class="co"># descriptivos</span></span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a><span class="co"># url datos</span></span>
+<span id="cb77-7"><a href="#cb77-7" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------</span></span>
+<span id="cb77-8"><a href="#cb77-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-9"><a href="#cb77-9" aria-hidden="true" tabindex="-1"></a>url_location <span class="ot">&lt;-</span> <span class="fu">url</span>(<span class="st">&#39;https://github.com/dacarras/psi2301_2023_tarea_test/raw/main/ingresos_2016.rds&#39;</span>)</span>
+<span id="cb77-10"><a href="#cb77-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-11"><a href="#cb77-11" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb77-12"><a href="#cb77-12" aria-hidden="true" tabindex="-1"></a><span class="co"># abrir datos</span></span>
+<span id="cb77-13"><a href="#cb77-13" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb77-14"><a href="#cb77-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-15"><a href="#cb77-15" aria-hidden="true" tabindex="-1"></a>data_inc <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(url_location)</span>
+<span id="cb77-16"><a href="#cb77-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-17"><a href="#cb77-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-18"><a href="#cb77-18" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb77-19"><a href="#cb77-19" aria-hidden="true" tabindex="-1"></a><span class="co"># sacar valores no válidos</span></span>
+<span id="cb77-20"><a href="#cb77-20" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb77-21"><a href="#cb77-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-22"><a href="#cb77-22" aria-hidden="true" tabindex="-1"></a>data_model <span class="ot">&lt;-</span> data_inc <span class="sc">%&gt;%</span></span>
+<span id="cb77-23"><a href="#cb77-23" aria-hidden="true" tabindex="-1"></a>              <span class="fu">mutate</span>(<span class="at">year_edu =</span> <span class="fu">as.numeric</span>(<span class="fu">na_if</span>(edu,<span class="sc">-</span> <span class="dv">88</span>)))</span>
+<span id="cb77-24"><a href="#cb77-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-25"><a href="#cb77-25" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb77-26"><a href="#cb77-26" aria-hidden="true" tabindex="-1"></a><span class="co"># función para obtener moda</span></span>
+<span id="cb77-27"><a href="#cb77-27" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb77-28"><a href="#cb77-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-29"><a href="#cb77-29" aria-hidden="true" tabindex="-1"></a><span class="co"># función para obtener moda</span></span>
+<span id="cb77-30"><a href="#cb77-30" aria-hidden="true" tabindex="-1"></a>mode <span class="ot">&lt;-</span> <span class="cf">function</span>(v) {</span>
+<span id="cb77-31"><a href="#cb77-31" aria-hidden="true" tabindex="-1"></a>   uniqv <span class="ot">&lt;-</span> <span class="fu">unique</span>(v)</span>
+<span id="cb77-32"><a href="#cb77-32" aria-hidden="true" tabindex="-1"></a>   uniqv[<span class="fu">which.max</span>(<span class="fu">tabulate</span>(<span class="fu">match</span>(v, uniqv)))]</span>
+<span id="cb77-33"><a href="#cb77-33" aria-hidden="true" tabindex="-1"></a><span class="co"># source: https://www.tutorialspoint.com/r/r_mean_median_mode.htm</span></span>
+<span id="cb77-34"><a href="#cb77-34" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb77-35"><a href="#cb77-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-36"><a href="#cb77-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-37"><a href="#cb77-37" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb77-38"><a href="#cb77-38" aria-hidden="true" tabindex="-1"></a><span class="co"># tendencia central</span></span>
+<span id="cb77-39"><a href="#cb77-39" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb77-40"><a href="#cb77-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-41"><a href="#cb77-41" aria-hidden="true" tabindex="-1"></a>data_model <span class="sc">%&gt;%</span></span>
+<span id="cb77-42"><a href="#cb77-42" aria-hidden="true" tabindex="-1"></a><span class="fu">summarize</span>(</span>
+<span id="cb77-43"><a href="#cb77-43" aria-hidden="true" tabindex="-1"></a><span class="at">moda    =</span> <span class="fu">mode</span>(hinc),</span>
+<span id="cb77-44"><a href="#cb77-44" aria-hidden="true" tabindex="-1"></a><span class="at">mediana =</span> <span class="fu">median</span>(hinc, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb77-45"><a href="#cb77-45" aria-hidden="true" tabindex="-1"></a><span class="at">media   =</span> <span class="fu">mean</span>(hinc, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb77-46"><a href="#cb77-46" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb77-47"><a href="#cb77-47" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(., <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">moda</th>
+<th align="right">mediana</th>
+<th align="right">media</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">150</td>
+<td align="right">307.63</td>
+<td align="right">502.87</td>
+</tr>
+</tbody>
+</table>
+<h2 id="descriptivos-de-posicion-eg-percentiles">Descriptivos de
+posicion (e.g., percentiles)</h2>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a><span class="co"># descriptivos</span></span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-5"><a href="#cb78-5" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb78-6"><a href="#cb78-6" aria-hidden="true" tabindex="-1"></a><span class="co"># percentiles</span></span>
+<span id="cb78-7"><a href="#cb78-7" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
+<span id="cb78-8"><a href="#cb78-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb78-9"><a href="#cb78-9" aria-hidden="true" tabindex="-1"></a>data_model <span class="sc">%&gt;%</span></span>
+<span id="cb78-10"><a href="#cb78-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summarize</span>(</span>
+<span id="cb78-11"><a href="#cb78-11" aria-hidden="true" tabindex="-1"></a><span class="at">percentil_25 =</span> <span class="fu">quantile</span>(hinc, <span class="at">probs =</span> .<span class="dv">25</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb78-12"><a href="#cb78-12" aria-hidden="true" tabindex="-1"></a><span class="at">percentil_50 =</span> <span class="fu">quantile</span>(hinc, <span class="at">probs =</span> .<span class="dv">50</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb78-13"><a href="#cb78-13" aria-hidden="true" tabindex="-1"></a><span class="at">percentil_75 =</span> <span class="fu">quantile</span>(hinc, <span class="at">probs =</span> .<span class="dv">75</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb78-14"><a href="#cb78-14" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb78-15"><a href="#cb78-15" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(., <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">percentil_25</th>
+<th align="right">percentil_50</th>
+<th align="right">percentil_75</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">179.09</td>
+<td align="right">307.63</td>
+<td align="right">580.77</td>
+</tr>
+</tbody>
+</table>
+<h2 id="descriptivos-de-variabilidad">Descriptivos de variabilidad</h2>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a><span class="co"># descriptivos</span></span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb79-6"><a href="#cb79-6" aria-hidden="true" tabindex="-1"></a><span class="co"># medidas de variabilidad</span></span>
+<span id="cb79-7"><a href="#cb79-7" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb79-8"><a href="#cb79-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-9"><a href="#cb79-9" aria-hidden="true" tabindex="-1"></a>data_model <span class="sc">%&gt;%</span></span>
+<span id="cb79-10"><a href="#cb79-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summarize</span>(</span>
+<span id="cb79-11"><a href="#cb79-11" aria-hidden="true" tabindex="-1"></a><span class="at">minimo =</span> <span class="fu">min</span>(hinc, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb79-12"><a href="#cb79-12" aria-hidden="true" tabindex="-1"></a><span class="at">maximo =</span> <span class="fu">max</span>(hinc, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb79-13"><a href="#cb79-13" aria-hidden="true" tabindex="-1"></a><span class="at">percentil_25 =</span> <span class="fu">quantile</span>(hinc, <span class="at">probs =</span> .<span class="dv">25</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb79-14"><a href="#cb79-14" aria-hidden="true" tabindex="-1"></a><span class="at">percentil_75 =</span> <span class="fu">quantile</span>(hinc, <span class="at">probs =</span> .<span class="dv">75</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb79-15"><a href="#cb79-15" aria-hidden="true" tabindex="-1"></a><span class="at">desviacion_estandar =</span> <span class="fu">sd</span>(hinc, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb79-16"><a href="#cb79-16" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb79-17"><a href="#cb79-17" aria-hidden="true" tabindex="-1"></a><span class="fu">mutate</span>(<span class="at">rango =</span> maximo <span class="sc">-</span> minimo) <span class="sc">%&gt;%</span></span>
+<span id="cb79-18"><a href="#cb79-18" aria-hidden="true" tabindex="-1"></a><span class="fu">mutate</span>(<span class="at">rango_intercuartil =</span> percentil_75 <span class="sc">-</span> percentil_25) <span class="sc">%&gt;%</span></span>
+<span id="cb79-19"><a href="#cb79-19" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(., <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">minimo</th>
+<th align="right">maximo</th>
+<th align="right">percentil_25</th>
+<th align="right">percentil_75</th>
+<th align="right">desviacion_estandar</th>
+<th align="right">rango</th>
+<th align="right">rango_intercuartil</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0</td>
+<td align="right">6663.79</td>
+<td align="right">179.09</td>
+<td align="right">580.77</td>
+<td align="right">604.29</td>
+<td align="right">6663.79</td>
+<td align="right">401.67</td>
+</tr>
+</tbody>
+</table>
+<h2 id="asimetria-de-distribuciones">Asimetria de distribuciones</h2>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a><span class="co"># descriptivos</span></span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------------------</span></span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-5"><a href="#cb80-5" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb80-6"><a href="#cb80-6" aria-hidden="true" tabindex="-1"></a><span class="co"># peso del primer hijo</span></span>
+<span id="cb80-7"><a href="#cb80-7" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb80-8"><a href="#cb80-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-9"><a href="#cb80-9" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(data_first_born<span class="sc">$</span>kg)</span>
+<span id="cb80-10"><a href="#cb80-10" aria-hidden="true" tabindex="-1"></a>moments<span class="sc">::</span><span class="fu">skewness</span>(data_first_born<span class="sc">$</span>kg, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb80-11"><a href="#cb80-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-12"><a href="#cb80-12" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb80-13"><a href="#cb80-13" aria-hidden="true" tabindex="-1"></a><span class="co"># ingresos de los hogares</span></span>
+<span id="cb80-14"><a href="#cb80-14" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb80-15"><a href="#cb80-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-16"><a href="#cb80-16" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(data_model<span class="sc">$</span>hinc)</span>
+<span id="cb80-17"><a href="#cb80-17" aria-hidden="true" tabindex="-1"></a>moments<span class="sc">::</span><span class="fu">skewness</span>(data_model<span class="sc">$</span>hinc, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb80-18"><a href="#cb80-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-19"><a href="#cb80-19" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb80-20"><a href="#cb80-20" aria-hidden="true" tabindex="-1"></a><span class="co"># apoyo a la equidad de genero</span></span>
+<span id="cb80-21"><a href="#cb80-21" aria-hidden="true" tabindex="-1"></a><span class="co"># -------------------------------------</span></span>
+<span id="cb80-22"><a href="#cb80-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-23"><a href="#cb80-23" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(psi2301<span class="sc">::</span>iccs_09_chl<span class="sc">$</span>GENEQL)</span>
+<span id="cb80-24"><a href="#cb80-24" aria-hidden="true" tabindex="-1"></a>moments<span class="sc">::</span><span class="fu">skewness</span>(psi2301<span class="sc">::</span>iccs_09_chl<span class="sc">$</span>GENEQL, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+
+</body>
+</html>
